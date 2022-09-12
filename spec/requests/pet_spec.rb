@@ -4,9 +4,7 @@ RSpec.describe "Pets", type: :request do
   let!(:pets) {create_list(:pet, 10)}
   let(:pet_id) {pets.first.id}
 
-
   describe "GET /pets" do
-
     before { get '/pets'}
 
     it 'returns pets' do 
